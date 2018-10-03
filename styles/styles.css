@@ -1,59 +1,78 @@
-/*styles for text and position of elements */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
+body{
+    display: flex;
+    flex-direction: column;
+}
 /*homepage css*/
 h1 {
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
     font-family: "Love Ya Like A Sister";
     font-size: 64px;
     color: rgb(255,51,0);
-    margin: auto;
-    text-align: center;
-    padding-bottom: 20px;
     font-weight: 400;
+    margin: 15px 0 0 0;
 }
 
 
-#about{
+.about-me-container{
+    text-align: center;
     font-family: 'Love Ya Like A Sister';
     font-size: 30px;
-    width: 65%;
-    margin: auto;
-    text-align: center;
 }
 
-ul {
-    list-style-type: none;
+.about-me-container {
+    padding: 0 12%;
+}
+
+
+/* icon layout */
+.icons{    
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.icons li{
+    display: flex;
+    padding: 0px 15px 5px 0 ;
+
+}
+.icons img{
+    /* max-width: 150px; */
     width: 100%;
-    padding-top: 25px;
-}
-
-li{
-    float: left;
-    width: 14%;
-}
-
-li img{
-    height: 150px;
-    max-width: 100%;
-    max-height: auto;
 }
 
 
 /*iframe page styles*/
 
 iframe{
+    display: flex;
     height:300px;
-    border: 4px solid rgb(255,51,0);
+    outline: 4px solid rgb(255,51,0);
     width: 100%;
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
-div p{
+/* iframe text */
+p{
+    display: flex;
     font-family: 'Love Ya Like A Sister';
     font-size: 22px;
     line-height: 1.4em;
 }  
 
-div{    
-     overflow: auto;
-}
+/* add responsive web features */
 
