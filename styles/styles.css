@@ -26,7 +26,7 @@ h1 {
 .about-me-container{
     text-align: center;
     font-family: 'Love Ya Like A Sister';
-    padding: 0px 8% 2% 8%;
+    padding: 0px 5% 2% 5%;
     /* outline: 1px solid green; */
 }
 
@@ -59,7 +59,8 @@ h1 {
 
 iframe{
     display: flex;
-    height:275px;
+    font-family: 'Love Ya Like A Sister';
+    max-height:275px;
     outline: 2px solid rgb(255,51,0);
     width: 100%;
     margin-top: 10px;
